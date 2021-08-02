@@ -7,18 +7,25 @@ Dark green: #28b485
 
 */
 
-* {
-  box-sizing: border-box;
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
 }
 body {
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 4rem;
+  /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
   font-family: "lato", sans-serif;
-  padding: 30px;
+  padding: 3rem;
+  font-size: 1.6rem;
+  box-sizing: border-box;
 }
 
 .header {
@@ -37,11 +44,11 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: 4rem;
 }
 .logo {
-  height: 35px;
+  height: 3.5rem;
 }
 
 .logo-box:hover {
@@ -60,22 +67,22 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
 }
 
 .heading-primary-main {
   display: block;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 3.5rem;
   animation: moveinleft 1s ease-out;
 }
 
 .heading-primary-sub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
-  letter-spacing: 17.4px;
+  letter-spacing: 1.75rem;
   animation-name: moveinright;
   animation-duration: 1s;
   animation-timing-function: ease-out;
@@ -86,11 +93,11 @@ animation-delay: 1s;
 
 @keyframes moveinleft {
   0% {
-    transform: translateX(-100px);
+    transform: translateX(-10rem);
   }
 
   80% {
-    transform: translateX(20px);
+    transform: translateX(2rem);
   }
 
   100% {
@@ -101,11 +108,11 @@ animation-delay: 1s;
 @keyframes moveinright {
   0% {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(10rem);
   }
 
   80% {
-    transform: translateX(-20px);
+    transform: translateX(-2rem);
   }
 
   100% {
@@ -117,7 +124,7 @@ animation-delay: 1s;
 @keyframes moveinbottom {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(3rem);
   }
   100% {
     transform: translate(0);
@@ -128,20 +135,20 @@ animation-delay: 1s;
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 100px;
+  border-radius: 10rem;
   transition: all 0.3s;
   position: relative;
 }
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .btn-white {
@@ -156,7 +163,7 @@ animation-delay: 1s;
   transition: all 0.4s;
   height: 100%;
   width: 100%;
-  border-radius: 100px;
+  border-radius: 10rem;
   position: absolute;
   z-index: -1;
 }
